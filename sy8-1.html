@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+<style>
+	body{
+		color: #FFF;
+	}
+	.container{
+		background-color:#3A3838;
+		height:700px;
+		width: 500px;
+		margin-left: 450px;
+		margin-top: 30px;
+	}
+	.sky,.hy,.ht{
+		width: 480px;
+		margin-left: 10px;
+	}
+	h2{
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding-top: 30px;
+	}
+	select{
+		width: 170px;
+		height: 25px;
+	}
+	[type="text"]{
+		width: 140px;
+		height: 25px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	[type="submit"]{
+		margin-left: 180px;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h2>增加快递信息</h2>
+    <form>
+		<div class="sky">
+			<fieldset>
+				<legend>发货单</legend>
+				<label>发货人：<input type="text" name="name"></label>
+				<label>地址：<input type="text" name="adress"></label><br>
+				<label>电话：<input type="text" name="telephone"></label>
+				<label>邮编：<input type="text" name="postcode"></label>
+			</fieldset>
+		</div>
+		<div class="hy">
+			<fieldset>
+				<legend>收货单</legend>
+				<label>收货人：<input type="text" name="name"></label>
+				<label>地址：<input type="text" name="adress"></label><br>
+				<label>电话：<input type="text" name="telephone"></label>
+				<label>邮编：<input type="text" name="postcode"></label><br>
+				<label>地区：</label>
+				<select>
+					<option>北京</option>
+					<option>上海</option>
+					<option>江苏</option>
+					<option>浙江</option>
+					<option>河南</option>
+				</select><br><br>
+				<label>包装：</label>
+				<input type="checkbox" name="package" value="纸箱" id="zhixiang">
+				<label for="zhixiang">纸箱</label>
+				<input type="checkbox" name="package" value="木箱" id="muxiang">
+				<label for="muxiang">木箱</label>
+				<input type="checkbox" name="package" value="快递袋" id="kuaididai">
+				<label for="kuaididai">快递袋</label>
+				<input type="checkbox" name="package" value="其他" id="other">
+				<label for="other">其他</label><br><br>
+				<label>付款方式:</label>
+				<input type="radio" name="way" value="现金" id="cash">
+				<label for="cash">现金</label>
+				<input type="radio" name="way" value="支付宝" id="zhifubao">
+				<label for="zhifubao">支付宝</label>
+				<input type="radio" name="way" value="网银" id="wangyin">
+				<label for="wangyin">网银</label>
+				<input type="radio" name="way" value="ATM" id="atm">
+				<label for="atm">ATM</label>
+			</fieldset>
+		</div>
+		<div class="ht">
+			<fieldset>
+				<legend>货物信息</legend>
+				<label>货物名称：<input type="text" name="name"></label>
+				<label>数量：<input type="text" name="number"></label><br>
+				<label>重量：<input type="text" name="weight"></label>
+				<label>发货时间：<input type="text" name="time"></label>	
+			</fieldset>
+		</div>
+		<br>
+		<input type="submit" name="true" value="确定" id="true">
+		<input type="reset" name="cancel" value="取消" id="concel">
+	</form>
+</div>
+</body>
+</html>
